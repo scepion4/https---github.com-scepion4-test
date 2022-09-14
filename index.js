@@ -8,13 +8,14 @@ button.addEventListener('click', counter)
 function counter() {
    let priceValue = price.value
    let howMuchValue = howMuch.value
-   if(howMuchValue<0){
+   
+   if (howMuchValue < 0 || howMuchValue === '') {
       result.innerHTML = 'enter the corect value'
-   }else if(priceValue<0){
+   } else if (priceValue < 0 || priceValue === '') {
       result.innerHTML = 'enter the corect value'
-   }else{
-      let sum =  howMuchValue/priceValue 
+   } else {
+      let sum = howMuchValue / priceValue
       result.innerHTML = `You can buy ${sum} BTC`
    }
-   
+
 }
