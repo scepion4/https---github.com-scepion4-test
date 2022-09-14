@@ -1,0 +1,12 @@
+
+.wrapper{
+   display: flex;
+   flex-direction: column;
+   max-width: 400px;
+   justify-content: center;
+   align-items: center;
+   margin: 0px auto;
+}
+.wrapper input{
+   margin-bottom: 30px;
+}
